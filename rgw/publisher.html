@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reality Got Weird Publisher — Reality Got Weird</title>
+<meta name="description" content="Reality Got Weird — short videos about impossible what-ifs, true stories that sound invented, and mysteries nobody has solved.">
+<link rel="icon" type="image/png" href="icon.png"><link rel="apple-touch-icon" href="icon.png">
+<style>
+:root{--bg:#0d0e19;--panel:#161828;--line:#262a40;--text:#e9eaf2;--muted:#a3a7c0;--cyan:#4fd6e0;--violet:#9a6fe0}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--cyan)}a:hover{color:#fff}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line);background:#0b0c16}
+header .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:700;font-size:18px;margin-right:auto}
+.brand img{width:40px;height:40px;border-radius:10px}
+nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:15px}nav a.on,nav a:hover{color:#fff}
+main{padding:36px 0 56px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 14px}h2{margin:34px 0 10px;font-size:22px}
+.hero{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:center}
+.hero img{width:200px;height:200px;border-radius:28px;box-shadow:0 0 60px #4fd6e033}
+.lead{color:var(--muted);font-size:18px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.pill{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 15px;text-decoration:none;color:var(--text);font-size:15px}
+.pill:hover{border-color:var(--cyan)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card b{color:var(--cyan)}.card:nth-child(2) b{color:var(--violet)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.vid{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--text)}
+.vid img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#000}
+.vid span{display:block;padding:10px 12px;font-size:14px;line-height:1.4}.vid:hover{border-color:var(--cyan)}
+ol li,ul li{margin:6px 0}code{background:#ffffff14;padding:1px 5px;border-radius:4px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{padding-top:22px;padding-bottom:28px;display:flex;flex-wrap:wrap;gap:8px 18px}
+footer a{color:var(--muted)}
+@media (max-width:640px){.hero{grid-template-columns:1fr}.hero img{width:140px;height:140px}.cards{grid-template-columns:1fr}nav a{margin:0 12px 0 0}}
+</style></head><body>
+<header><div class="wrap"><a class="brand" href="index.html"><img src="icon.png" alt="Reality Got Weird logo">Reality Got Weird</a><nav><a href="index.html">Home</a><a href="videos.html">Videos</a><a href="about.html">About</a><a href="publisher.html" class=on>Publisher app</a><a href="contact.html">Contact</a></nav></div></header>
+<main><div class="wrap">
+
+<h1>Reality Got Weird Publisher</h1>
+<p class="lead">The private tool the owner of the <a href="https://www.tiktok.com/@reality.got.weird">@reality.got.weird</a> TikTok account uses to post that account's own original videos.</p>
+<h2>What it does</h2>
+<p>When a new short is finished, the publisher uploads that one video file to the owner's own TikTok account through TikTok's official Content Posting API, with the caption and privacy setting the owner chose. It has no other users, no sign-up, and posts to no account but our own.</p>
+<h2>How it works</h2>
+<ol>
+<li><b>Authorize once.</b> The owner signs in with TikTok (Login Kit) and approves the <code>user.info.basic</code> and <code>video.publish</code> scopes on TikTok's own consent screen.</li>
+<li><b>Read the creator's settings.</b> Before every post the tool asks TikTok which privacy levels and interaction settings the account allows, and only offers those.</li>
+<li><b>Upload the video.</b> The finished MP4 is sent directly to TikTok with its caption. Nothing is scraped, re-uploaded from other creators, or posted automatically without the owner.</li>
+<li><b>Confirm the post.</b> The tool checks the publish status TikTok returns, then the owner reviews the live post.</li>
+</ol>
+<h2>Data</h2>
+<p>Access tokens stay in the system keychain on the owner's own computer. The tool stores no viewer data and shares nothing with third parties. Access can be revoked any time in TikTok → Settings → Security &amp; permissions → Manage app permissions. Full details: <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>.</p>
+</div></main>
+<footer><div class="wrap"><span>© 2026 Reality Got Weird</span><a href="https://www.tiktok.com/@reality.got.weird">TikTok</a> <a href="https://www.youtube.com/channel/UCMcuDvUTYhe3F_y4sYC6QnA">YouTube</a> <a href="https://www.facebook.com/1220741607797012">Facebook</a> <a href="https://www.instagram.com/realitygotweird/">Instagram</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="contact.html">Contact</a></div></footer>
+</body></html>
